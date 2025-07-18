@@ -1,0 +1,8 @@
+Import('*')
+
+SimObject('MyPrefetcher.py', sim_objects=["NextLinePrefetcher", "MarkovPrefetcher"])
+
+Source('next_line.cc')
+Source('markov.cc')
+
+DebugFlag("MarkovPrefetch")
